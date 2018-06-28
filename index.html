@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALC Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+</head>
+<body>
+    <header id="header">
+        <h1 id="headertitle">Currency Converter</h1>
+    </header>
+    <main>
+        <div class="convert">
+            <div class="convertHeader"><h2>Select Conversion Parameters</h2></div>
+            <div class="convertMain">
+                <div class="convertFrom">
+                    <label for="convertFrom">Convert From:</label>
+                    <select name="convertFrom" id="convertFrom"></select>
+                </div><br>
+                <div class="convertFromAmount">
+                        <label for="amountFrom">Amount</label>
+                        <input type="number" id="amountFrom">
+                </div><br>
+                <div class="convertTo">
+                        <label for="convertTo">Convert To: </label>
+                        <select name="convertTo" id="convertTo" ></select>
+                </div><br>
+                <div class="Submit">
+                        <button onclick="changeHandler()">Submit</button>
+                </div>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/apps.js"></script>
+</body>
+</html>
